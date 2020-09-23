@@ -12,6 +12,6 @@
  - [Towers of Hanoi](https://bunny83.github.io/UnityWebExamples/Hanoi/)
  - [Intercept Example](https://bunny83.github.io/UnityWebExamples/InterceptExample/)
  - [Infinite "Zoom" Example](https://bunny83.github.io/UnityWebExamples/InfiniteZoomExample/)
- - [HealthBar Example](https://bunny83.github.io/UnityWebExamples/HealthBarExample/)
+ - [HealthBar Example](https://bunny83.github.io/UnityWebExamples/HealthBarExample/index.html)
 
  
