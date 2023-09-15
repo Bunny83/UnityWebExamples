@@ -1,0 +1,31 @@
+# This configuration file should be uploaded to the server as "<Application Folder>/Build/.htaccess"
+# NOTE: "mod_mime" Apache module must be enabled for this configuration to work.
+<IfModule mod_mime.c>
+
+# The following lines are required for builds without decompression fallback, compressed with gzip
+RemoveType .gz
+AddEncoding gzip .gz
+AddType application/gzip .data.gz # The correct MIME type here would be application/octet-stream, but due to Safari bug https://bugs.webkit.org/show_bug.cgi?id=247421, it's preferable to use MIME Type application/gzip instead.
+AddType application/wasm .wasm.gz
+AddType application/javascript .js.gz
+AddType application/octet-stream .symbols.json.gz
+
+# The following lines are required for builds without decompression fallback, compressed with Brotli
+RemoveType .br
+RemoveLanguage .br
+AddEncoding br .br
+AddType application/octet-stream .data.br
+AddType application/wasm .wasm.br
+AddType application/javascript .js.br
+AddType application/octet-stream .symbols.json.br
+
+# The following line improves loading performance for uncompressed builds
+AddType application/wasm .wasm
+
+# Uncomment the following line to improve loading performance for gzip-compressed builds with decompression fallback
+# AddEncoding gzip .unityweb
+
+# Uncomment the following line to improve loading performance for brotli-compressed builds with decompression fallback
+# AddEncoding br .unityweb
+
+</IfModule>
