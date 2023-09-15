@@ -13,5 +13,6 @@
  - [Intercept Example](https://bunny83.github.io/UnityWebExamples/InterceptExample/)
  - [Infinite "Zoom" Example](https://bunny83.github.io/UnityWebExamples/InfiniteZoomExample/)
  - [HealthBar Example](https://bunny83.github.io/UnityWebExamples/HealthBarExample/index.html)
+ - [MP3 Loader Example](https://bunny83.github.io/UnityWebExamples/MP3Test/index.html)
 
  
